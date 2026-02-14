@@ -6,7 +6,7 @@ import { baremuxPath } from '@mercuryworkshop/bare-mux/node';
 import { libcurlPath } from '@mercuryworkshop/libcurl-transport';
 import { scramjetPath } from '@mercuryworkshop/scramjet/path';
 
-// @ts-ignore
+//@ts-ignore
 import { server as wisp } from '@mercuryworkshop/wisp-js/server';
 
 const wispPlugin = () => ({

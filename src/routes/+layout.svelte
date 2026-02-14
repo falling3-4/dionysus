@@ -1,5 +1,5 @@
 <script lang="ts">
-	import favicon from '$lib/assets/favicon.svg';
+	import favicon from '$lib/assets/favicon.webp';
 	import '../app.css';
 
 	let { children } = $props();
@@ -47,14 +47,14 @@
 						<a href="/" class="sidebar-nav-link">✦ Home</a>
 					</li>
 					<li class="sidebar-nav-item">
-						<a href="/about" class="sidebar-nav-link">✦ Proxy</a>
+						<a href="/p" class="sidebar-nav-link">✦ Network</a>
 					</li>
 					<li class="sidebar-nav-item">
-						<a href="/services" class="sidebar-nav-link">✦ Games</a>
+						<a href="/g" class="sidebar-nav-link">✦ Play</a>
 					</li>
 				</ul>
 			</td>
-			<td class="resizer" on:mousedown={startResize}></td>
+			<td class="resizer" onmousedown={startResize}></td>
 			<td bind:this={content} width="800" valign="top" class="content">
 				<div class="content-inner">
 					{@render children()}
@@ -62,7 +62,10 @@
 			</td>
 		</tr>
 		<tr>
-			<td colspan="3" class="footer"> © 2001 DIONYSUS </td>
+			<td colspan="3" class="footer">
+				© {new Date(Date.now()).getFullYear()} DIONYSUS /
+				<a href="https://3-4.gay" target="_blank">falling3_4</a>
+			</td>
 		</tr>
 	</tbody>
 </table>

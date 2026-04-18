@@ -1,6 +1,7 @@
-const zonesURL = 'https://cdn.jsdelivr.net/gh/gn-math/assets@main/zones.json';
-const coverURL = 'https://cdn.jsdelivr.net/gh/gn-math/covers@main';
-const htmlURL = 'https://cdn.jsdelivr.net/gh/gn-math/html@main';
+const zonesURL =
+	'https://cdn.jsdelivr.net/gh/freebuisness/assets@7ac91913585e1f023d8cd4c1fcb098532705e750/zones.json';
+const coverURL = 'https://cdn.jsdelivr.net/gh/freebuisness/covers@main';
+const htmlURL = 'https://cdn.jsdelivr.net/gh/freebuisness/html@main';
 
 export interface Game {
 	id: number;

@@ -3,12 +3,16 @@
 
 	let { game } = $props<{ game: Game }>();
 
-	const coverURL = 'https://cdn.jsdelivr.net/gh/gn-math/covers@main';
+	const coverURL = 'https://cdn.jsdelivr.net/gh/freebuisness/covers@main';
 </script>
 
 <div class="game-card">
 	<a href={`/g/${game.id}`} class="game-card-link">
-		<img src={game.cover.replace('{COVER_URL}', coverURL)} alt={game.name} class="game-card-cover" />
+		<img
+			src={game.cover.replace('{COVER_URL}', coverURL)}
+			alt={game.name}
+			class="game-card-cover"
+		/>
 		<div class="game-card-title">{game.name}</div>
 	</a>
 </div>
